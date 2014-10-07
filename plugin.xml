@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="org.android.tools.suspend"
+    version="0.1.0">
+
+    <name>Android Suspend</name>
+    <description>Use this plugin to suspend your app. Just in case you want your back button to switch to home screen.</description>
+    
+    <author>Tuan Nguyen</author>
+    <keywords>suspend,back button</keywords>
+    <repo>https://github.com/org.android.tools.suspend</repo>
+    <license>MIT License</license>
+	
+    <!-- android -->
+    <platform name="android">
+        <js-module src="www/suspend.js" name="suspend">
+            <clobbers target="window.plugins.Suspend" />
+        </js-module>
+
+        <!-- Cordova >= 3.0.0 -->
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Suspend">
+				<param name="android-package" value="org.android.tools.Suspend"/>
+			</feature>
+        </config-file>
+        
+        <!-- cordova plugin src files -->
+        <source-file src="src/org/android/tools/Suspend.java" target-dir="src/org/android/tools/" />
+    </platform>
+</plugin>
