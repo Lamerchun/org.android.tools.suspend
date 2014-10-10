@@ -3,7 +3,7 @@
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="org.android.tools.suspend"
-    version="0.1.0">
+    version="0.1.2">
 
     <name>Android Suspend</name>
     <description>Use this plugin to suspend your app. Just in case you want your back button to switch to home screen.</description>
