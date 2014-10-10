@@ -10,7 +10,7 @@
     
     <author>Tuan Nguyen</author>
     <keywords>suspend,back button</keywords>
-    <repo>https://github.com/org.android.tools.suspend</repo>
+    <repo>https://github.com/lamerchun/org.android.tools.suspend</repo>
     <license>MIT License</license>
 	
     <!-- android -->
