@@ -15,9 +15,7 @@ public class Suspend extends CordovaPlugin {
 		boolean result = false;
 		
 		if (action.equals(SUSPEND)) {
-			Intent i = new Intent(Intent.ACTION_MAIN);
-			i.addCategory(Intent.CATEGORY_HOME);
-			this.cordova.getActivity().startActivity(i);
+			this.cordova.getActivity().finish();
 			
 			result = true;
 		}

@@ -1,7 +1,8 @@
 Android Suspend documentation
 ===================================
 
-This plugins creates an intent to home screen. This can be used to make your back button suspend your app.
+This plugins [finishes the current Activity](http://developer.android.com/reference/android/app/Activity.html#finish%28%29).
+This can be used to make your back button suspend your app.
 
 Requirements
 -------------
